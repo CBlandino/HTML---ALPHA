@@ -40,6 +40,7 @@ header {
 }
 
 .nav-item {
+    cursor: pointer;
     margin-right: 10px;
 }
 
@@ -76,8 +77,19 @@ header {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     max-width: 435px;
     width: 86%;
-    animation: fadeInDown 0.5s ease; /* Fade-in animation */
+    transition: transform 0.5s ease; /* Use CSS transition instead of keyframes */
 }
+
+/* Adjust the initial transform to start from a higher position */
+.login-popup-content {
+    transform: translate(-50%, -100%);
+}
+
+/* Show the popup by changing the transform */
+.login-popup.show {
+    transform: translate(-50%, -50%);
+}
+
 
 .close {
     position: absolute;

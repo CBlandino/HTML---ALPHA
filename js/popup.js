@@ -19,11 +19,11 @@ function showLoginPopup() {
 
         // Show the login popup
         const loginPopupContent = popupContainer.querySelector('.login-popup-content');
-        loginPopupContent.classList.add('login-popup'); // Add the login-popup class
-        loginPopupContent.style.display = 'block';
+        loginPopupContent.classList.add('login-popup', 'show'); // Add classes to trigger animation
     })
     .catch(error => console.error('Error loading login popup:', error));
 }
+
 
 
 function closeLoginPopup() {
