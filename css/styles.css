@@ -54,13 +54,73 @@ header {
 }
 
 /* Specific Page Styles */
-
-
-
-.container > main {
-    padding-bottom: 20px;
+.login-popup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1001; /* Ensure it's above overlay */
 }
 
+.login-popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 45px;
+    border-radius: 28px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 435px;
+    width: 86%;
+    animation: fadeInDown 0.5s ease; /* Fade-in animation */
+}
+
+.close {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
 .footer {
     background-color: #343a40;
     color: #fff;
@@ -77,10 +137,14 @@ header {
     text-decoration: underline;
 }
 
-/* Media Queries */
-
-@media (max-width: 768px) {
-    .navbar-collapse {
-        justify-content: center;
+/* Animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
