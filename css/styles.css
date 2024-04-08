@@ -77,6 +77,7 @@ header {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     max-width: 435px;
     width: 86%;
+    animation: fadeInDown 0.5s ease; /* Fade-in animation */
     transition: transform 0.5s ease; /* Use CSS transition instead of keyframes */
 }
 
