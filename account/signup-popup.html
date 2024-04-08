@@ -1,0 +1,25 @@
+<!-- signup-popup.html -->
+<div class="signup-popup-content">
+    <span class="close" onclick="closeSignupPopup()">&times;</span>
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+        <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="JohnSmith@example.com" required>
+        </div>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="JohnSmith" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="#" onclick="closeSignupPopup(); showLoginPopup();">Login</a></p>
+</div>

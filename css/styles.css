@@ -8,7 +8,8 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px; /* Adjust as needed */
+    /* Adjust as needed */
+    max-width: 1200px; 
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -22,7 +23,8 @@ header {
     color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
-    text-decoration: none; /* Remove underline */
+    /* Remove underline */
+    text-decoration: none; 
 }
 
 .navbar-toggler-icon {
@@ -36,7 +38,8 @@ header {
 .navbar-nav {
     display: flex;
     align-items: center;
-    list-style-type: none; /* Remove bullets */
+     /* Remove bullets */
+    list-style-type: none;
 }
 
 .nav-item {
@@ -47,7 +50,8 @@ header {
 .nav-link {
     color: #fff;
     font-weight: bold;
-    text-decoration: none !important; /* Remove underline */
+    /* Remove underline */
+    text-decoration: none !important; 
 }
 
 .nav-link:hover {
@@ -56,29 +60,32 @@ header {
 
 /* Specific Page Styles */
 .login-popup {
-    display: none; /* Initially hidden */
+    /* Initially hidden */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 40%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    z-index: 1001; /* Ensure it's above overlay */
+    height: 34%;
+    /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Ensure it's above overlay */
+    z-index: 1001; 
 }
 
 .login-popup-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
     background-color: #fff;
     padding: 45px;
     border-radius: 28px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     max-width: 435px;
     width: 86%;
-    animation: fadeInDown 0.5s ease; /* Fade-in animation */
-    transition: transform 0.5s ease; /* Use CSS transition instead of keyframes */
+    animation: fadeInDown 0.5s ease-out; /* Updated timing function */
+    transition: transform 0.5s ease-out; /* Use CSS transition instead of keyframes */
 }
 
 /* Adjust the initial transform to start from a higher position */
@@ -150,6 +157,48 @@ button[type="submit"]:hover {
     text-decoration: underline;
 }
 
+/* Specific Page Styles */
+.signup-popup {
+    /* Initially hidden */
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 34%;
+    /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); 
+    /* Ensure it's above overlay */
+    z-index: 1001; 
+}
+
+.signup-popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background-color: #fff;
+    padding: 45px;
+    border-radius: 28px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 435px;
+    width: 86%;
+    /* Updated timing function */
+    animation: fadeInDown 0.5s ease-out; 
+    /* Use CSS transition instead of keyframes */
+    transition: transform 0.5s ease-out; 
+}
+
+/* Adjust the initial transform to start from a higher position */
+.signup-popup-content {
+    transform: translate(-50%, -100%);
+}
+
+/* Show the popup by changing the transform */
+.signup-popup.show {
+    transform: translate(-50%, -50%);
+}
+
 /* Animation */
 @keyframes fadeInDown {
     from {
@@ -161,3 +210,4 @@ button[type="submit"]:hover {
         transform: translateY(0);
     }
 }
+
