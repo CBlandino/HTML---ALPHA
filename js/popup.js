@@ -19,7 +19,7 @@ function showLoginPopup() {
 
         // Show the login popup
         const loginPopupContent = popupContainer.querySelector('.login-popup-content');
-        // Add the login-popup class
+        
         loginPopupContent.classList.add('login-popup'); 
         loginPopupContent.style.display = 'block';
         // Add classes to trigger animation
@@ -58,12 +58,20 @@ function showSignupPopup() {
     .catch(error => console.error('Error loading signup popup:', error));
 }
 
+function closeLoginPopup() {
+    // Find the login popup content
+    const loginPopupContent = document.querySelector('.login-popup-content');
+    if (loginPopupContent) {
+        // Remove the login popup content from its parent node
+        loginPopupContent.parentNode.removeChild(loginPopupContent);
+    }
+}
 
-function closePopup(popupClass) {
-    // Find the popup content
-    const popupContent = document.querySelector('.' + popupClass);
-    if (popupContent) {
-        // Remove the popup content from its parent node
-        popupContent.parentNode.removeChild(popupContent);
+function closeSignupPopup() {
+    // Find the signup popup content
+    const signupPopupContent = document.querySelector('.signup-popup-content');
+    if (signupPopupContent) {
+        // Remove the signup popup content from its parent node
+        signupPopupContent.parentNode.removeChild(signupPopupContent);
     }
 }
