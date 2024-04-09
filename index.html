@@ -6,31 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALPHA - Home</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Add your additional CSS files or CDN links here for further styling -->
 </head>
 
 <body>
     <header>
+        <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" href="#">ALPHA</a>
+                <a class="navbar-brand" href="home.html">ALPHA</a>
+                <!-- Toggle Button for Mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Navigation Links -->
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between align-items-center">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="aboutus.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">(PLACEHOLDER)</a>
+                            <a class="nav-link text-dark" href="#">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">(PLACEHOLDER)</a>
+                            <a class="nav-link text-dark" href="#">Contact</a>
                         </li>
                         <li class="nav-item" style="margin-left: auto;">
-                            <a id="loginLink" class="nav-link text-dark"
-                                onclick="showLoginPopup()">Login</a>
+                            <a class="nav-link text-dark"  onclick="showLoginPopup()">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -39,20 +42,49 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
-            <!-- Main Content -->
+            <!-- Main Content Section -->
             <section>
-                <h2>Welcome to ALPHA</h2>
-                <p>This is the home page of our website.</p>
+                <!-- Jumbotron for Welcome Message -->
+                <div class="jumbotron text-center">
+                    <h1 class="display-4">Welcome to ALPHA</h1>
+                    <p class="lead">Discover the latest trends in fashion.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Explore Now</a>
+                </div>
+                <!-- Three Columns Section -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- Trending Products with Image -->
+                        <h2>Trending Products</h2>
+                        <img src="img/" alt="Trending Products" class="">
+                        <p>Check out our best items of the season.</p>
+                        <a class="btn btn-secondary" href="product.html" role="button">View Products</a>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- About Us with Image -->
+                        <h2>About Us</h2>
+                        <img src="img/" alt="About Us" class="">
+                        <p>Learn more about our brand and mission.</p>
+                        <a class="btn btn-secondary" href="aboutus.html" role="button">Read More</a>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Contact Us with Image -->
+                        <h2>Contact Us</h2>
+                        <img src="img/" alt="Contact Us" class="">
+                        <p>Have a question or feedback? Get in touch.</p>
+                        <a class="btn btn-secondary" href="#" role="button">Contact</a>
+                    </div>
+                </div>
             </section>
         </main>
     </div>
 
+    <!-- Footer Section -->
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - ALPHA - <a href="#">Privacy</a>
         </div>
     </footer>
-
+    <!-- Additional JavaScript files -->
     <script src="js/popup.js"></script>
 </body>
 
