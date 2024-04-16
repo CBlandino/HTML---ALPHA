@@ -1,76 +1,104 @@
-/* Reset CSS */
-* {
-    box-sizing: border-box;
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
   
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-  }
-  
   .container {
-    max-width: 1200px;
+    width: 100%;
+    /* Adjust as needed */
+    max-width: 1200px; 
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
   }
   
-  h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+  header {
+    background-color: #343a40;
+    padding: 20px 0;
   }
   
+  .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* Remove underline */
+    text-decoration: none; 
+  }
+  
+  .navbar-toggler-icon {
+    color: #fff;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    /* Remove bullets */
+    list-style-type: none;
+  }
+  
+  .nav-item {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    font-weight: bold;
+    /* Remove underline */
+    text-decoration: none !important; 
+  }
+  
+  .nav-link:hover {
+    color: #f8f9fa;
+  }
+  
+  /* Specific Page Styles */
   .product {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   
   .product-item {
-    width: calc(33.33% - 20px);
-    margin-bottom: 40px;
-  }
-  
-  .product-img {
-    width: 100%;
-    border-radius: 5px;
-  }
-  
-  .product-info {
-    background-color: #fff;
+    flex: 1 0 300px;
+    margin: 10px;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
   }
   
-  .product-title {
-    font-size: 18px;
-    margin-bottom: 10px;
+  /* Footer Styles */
+  .footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
   }
   
-  .product-price {
-    font-size: 16px;
-    font-weight: bold;
-    color: #007bff;
+  .footer a {
+    color: #fff;
+    text-decoration: none;
   }
   
-  .product-description {
-    font-size: 14px;
-    margin-top: 10px;
+  .footer a:hover {
+    text-decoration: underline;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .product-item {
-      width: calc(50% - 20px);
-    }
+  /* Logo */
+  .navbar-brand {
+    background-image: url('img/Alpha_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 150px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
   }
   
-  @media (max-width: 576px) {
-    .product-item {
-      width: calc(100% - 20px);
-    }
+  /* Change color of specific navigation links */
+  .navbar-nav .nav-link {
+    color: #fff;
   }
   

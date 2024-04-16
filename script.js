@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Sample data for clothing products
     const products = [
       {
         title: "Men's T-Shirt",
@@ -8,17 +7,24 @@ document.addEventListener("DOMContentLoaded", function() {
         image: "tshirt.jpg"
       },
       {
-        title: "Women's Jeans",
+        title: "Men's Hoodies",
         price: 34.99,
         description: "Stretchable denim jeans for women.",
         image: "jeans.jpg"
       },
       {
-        title: "Unisex Sneakers",
-        price: 49.99,
+        title: "Men's Oversized T-Shirt",
+        price: 24.99,
+        description: "Stylish sneakers for men and women.",
+        image: "sneakers.jpg"
+      },
+      {
+        title: "Men's Oversized Pants",
+        price: 25.99,
         description: "Stylish sneakers for men and women.",
         image: "sneakers.jpg"
       }
+      
     ];
   
     const productList = document.getElementById("product-list");
