@@ -4,25 +4,25 @@ document.addEventListener("DOMContentLoaded", function() {
         title: "Men's T-Shirt",
         price: 19.99,
         description: "Comfortable cotton t-shirt for men.",
-        image: "tshirt.jpg"
+        image: ""
       },
       {
         title: "Men's Hoodies",
         price: 34.99,
-        description: "Stretchable denim jeans for women.",
-        image: "jeans.jpg"
+        description: "Comfortable polyester hoodies for men.",
+        image: ""
       },
       {
         title: "Men's Oversized T-Shirt",
         price: 24.99,
-        description: "Stylish sneakers for men and women.",
-        image: "sneakers.jpg"
+        description: "Stylish and comfotable t-shirts for yor day to day fit",
+        image: ""
       },
       {
         title: "Men's Oversized Pants",
-        price: 25.99,
-        description: "Stylish sneakers for men and women.",
-        image: "sneakers.jpg"
+        price: 29.99,
+        description: "Stylish and comfotable pants for yor day to day fit.",
+        image: ""
       }
       
     ];
