@@ -201,6 +201,21 @@ button[type="submit"]:hover {
 }
 
 
+.contact-box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section label {
+    font-weight: bold;
+}
+
+.contact-section button {
+    margin-top: 10px;
+}
+
+
 
 /* Animation */
 @keyframes fadeInDown {
