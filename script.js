@@ -2,25 +2,25 @@ document.addEventListener("DOMContentLoaded", function() {
     const products = [
       {
         title: "Men's T-Shirt",
-        price: 19.99,
+        price: 17.99,
         description: "Comfortable cotton t-shirt for men.",
         image: ""
       },
       {
         title: "Men's Hoodies",
-        price: 34.99,
+        price: 23.99,
         description: "Comfortable polyester hoodies for men.",
         image: ""
       },
       {
-        title: "Men's Oversized T-Shirt",
-        price: 24.99,
-        description: "Stylish and comfotable t-shirts for yor day to day fit",
+        title: "Men's Buckethat",
+        price: 12.99,
+        description: "Stylish and comfotable buckethat for yor day to day fit",
         image: ""
       },
       {
-        title: "Men's Oversized Pants",
-        price: 29.99,
+        title: "Men's Sweatpants",
+        price: 14.99,
         description: "Stylish and comfotable pants for yor day to day fit.",
         image: ""
       }
