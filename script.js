@@ -4,25 +4,25 @@ document.addEventListener("DOMContentLoaded", function() {
         title: "Men's T-Shirt",
         price: 17.99,
         description: "Comfortable cotton t-shirt for men.",
-        image: ""
+        image: "img/white_tee_front.png"
       },
       {
         title: "Men's Hoodies",
         price: 23.99,
         description: "Comfortable cotton hoodies for men.",
-        image: ""
+        image: "img/white_hoodie_front.png"
       },
       {
         title: "Men's Buckethat",
         price: 12.99,
         description: "Stylish and comfortable buckethat for your day to day fit",
-        image: ""
+        image: "img/white_buckethat.png"
       },
       {
         title: "Men's Sweatpants",
         price: 14.99,
         description: "Stylish and comfortable pants for your day to day fit.",
-        image: ""
+        image: "img/white_sweatpants.png"
       }
       
     ];
