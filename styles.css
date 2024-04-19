@@ -1,104 +1,167 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #343a40;
+  padding: 20px 0;
+}
+
+.navbar-brand {
+  background-image: url('img/Alpha_logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 150px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-item {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none !important; 
+}
+
+.nav-link:hover {
+  color: #f8f9fa;
+}
+
+/* Specific Page Styles */
+.login-popup,
+.signup-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 46%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1001; 
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  background-color: #fff;
+  padding: 45px;
+  border-radius: 28px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  max-width: 435px;
+  width: 86%;
+  animation: fadeInDown 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+}
+
+.popup-content {
+  transform: translate(-50%, -100%);
+}
+
+.popup.show {
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-50%);
   }
-  
-  .container {
-    width: 100%;
-    /* Adjust as needed */
-    max-width: 1200px; 
-    margin: 0 auto;
-    padding: 0 20px;
+  to {
+      opacity: 1;
+      transform: translateY(0);
   }
-  
-  header {
-    background-color: #343a40;
-    padding: 20px 0;
-  }
-  
-  .navbar-brand {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
-    /* Remove underline */
-    text-decoration: none; 
-  }
-  
-  .navbar-toggler-icon {
-    color: #fff;
-  }
-  
-  .navbar-toggler {
-    border: none;
-  }
-  
-  .navbar-nav {
-    display: flex;
-    align-items: center;
-    /* Remove bullets */
-    list-style-type: none;
-  }
-  
-  .nav-item {
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  
-  .nav-link {
-    color: #fff;
-    font-weight: bold;
-    /* Remove underline */
-    text-decoration: none !important; 
-  }
-  
-  .nav-link:hover {
-    color: #f8f9fa;
-  }
-  
-  /* Specific Page Styles */
-  .product {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .product-item {
-    flex: 1 0 300px;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ccc;
-  }
-  
-  /* Footer Styles */
-  .footer {
-    background-color: #343a40;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .footer a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Logo */
-  .navbar-brand {
-    background-image: url('img/Alpha_logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 150px; /* Adjust as needed */
-    height: 40px; /* Adjust as needed */
-  }
-  
-  /* Change color of specific navigation links */
-  .navbar-nav .nav-link {
-    color: #fff;
-  }
-  
+}
