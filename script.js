@@ -26,36 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
       
     ];
-function showLoginPopup() {
-    // Fetch login popup content and styles dynamically
-    Promise.all([
-        fetch('account/login-popup.html').then(response => response.text()),
-        fetch('css/styles.css').then(response => response.text()) 
-    ])
-    .then(([html, css]) => {
-        // Create a div to hold the popup content
-        const popupContainer = document.createElement('div');
-        popupContainer.innerHTML = html;
 
-        // Append the popup content to the body
-        document.body.appendChild(popupContainer);
-
-        // Apply styles to the popup content
-        const styleElement = document.createElement('style');
-        styleElement.textContent = css;
-        document.head.appendChild(styleElement);
-
-        // Show the login popup
-        const loginPopupContent = popupContainer.querySelector('.login-popup-content');
-        
-        loginPopupContent.classList.add('login-popup'); 
-        loginPopupContent.style.display = 'block';
-        // Add classes to trigger animation
-        loginPopupContent.classList.add('login-popup', 'show'); 
-    })
-    .catch(error => console.error('Error loading login popup:', error));
-}
-  
     const productList = document.getElementById("product-list");
   
     // Function to display products on the webpage
