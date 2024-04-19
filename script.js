@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         title: "Men's T-Shirt",
         price: 17.99,
         description: "Comfortable cotton t-shirt for men.",
-        image: ""
+        image: "img/white_tee_front.png"
       },
       {
         title: "Men's Hoodies",
