@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="body {.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">ALPHA</a>
+                <!-- Toggle Button for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navigation Links -->
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between align-items-center">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="product.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="contactus.html">Contact</a>
+                        </li>
+                        <li class="nav-item" style="margin-left: auto;">
+                            <a class="nav-link text-dark"  onclick="showLoginPopup()">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="product-list">
+            <h2>Products</h2>
+            <!-- Jackets -->
+            <div class="product">
+                <img src="jackets.jpg" alt="Jackets">
+                <h3>Jackets (Varsity/Bombers)</h3>
+                <p>Price: $TBA</p>
+                <button onclick="addToCart('Jackets (Varsity/Bombers)', TBA)">Add to Cart</button>
+            </div>
+
+            <!-- Jerseys -->
+            <div class="product">
+                <img src="jerseys.jpg" alt="Jerseys">
+                <h3>Jerseys</h3>
+                <p>Price: $TBA</p>
+                <button onclick="addToCart('Jerseys', TBA)">Add to Cart</button>
+            </div>
+
+            <!-- Shorts -->
+            <div class="product">
+                <img src="shorts.jpg" alt="Shorts">
+                <h3>Shorts</h3>
+                <p>Price: $TBA</p>
+                <button onclick="addToCart('Shorts', TBA)">Add to Cart</button>
+            </div>
+
+            <!-- Jeans -->
+            <div class="product">
+                <img src="jeans.jpg" alt="Jeans">
+                <h3>Jeans</h3>
+                <p>Price: $TBA</p>
+                <button onclick="addToCart('Jeans', TBA)">Add to Cart</button>
+            </div>
+
+            <!-- Shoes/Slides -->
+            <div class="product">
+                <img src="shoes.jpg" alt="Shoes/Slides">
+                <h3>Shoes/Slides</h3>
+                <p>Price: $TBA</p>
+                <button onclick="addToCart('Shoes/Slides', TBA)">Add to Cart</button>
+            </div>
+
+            <!-- Hoodies -->
+            <div class="product">
+                <img src="hoodies.jpg" alt="Hoodies">
+                <h3>Hoodies</h3>
+                <p>Price: $TBA</p>
+                <button onclick="addToCart('Hoodies', TBA)">Add to Cart</button>
+            </div>
+
+            <!-- Graphic Tees -->
+            <div class="product">
+                <img src="graphic_tees.jpg" alt="Graphic Tees">
+                <h3>Graphic Tees</h3>
+                <p>Price: $TBA</p>
+                <button onclick="addToCart('Graphic Tees', TBA)">Add to Cart</button>
+            </div>
+
+            <!-- Sweatpants -->
+            <div class="product">
+                <img src="sweatpants.jpg" alt="Sweatpants">
+                <h3>Sweatpants</h3>
+                <p>Price: $TBA</p>
+                <button onclick="addToCart('Sweatpants', TBA)">Add to Cart</button>
+            </div>
+
+            <!-- Tees -->
+            <div class="product">
+                <img src="tees.jpg" alt="Tees">
+                <h3>Tees</h3>
+                <p>Price: $TBA</p>
+                <button onclick="addToCart('Tees', TBA">Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="shopping-cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </ul>
+            <p>Total: $<span id="total-price">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+    </main>
+<!-- Footer Section -->
+<footer class="border-top footer text-muted">
+    <div class="container">
+        &copy; 2024 - ALPHA - <a href="#">Privacy</a>
+    </div>
+</footer>
+<!-- Additional JavaScript files -->
+<script src="js/popup.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
