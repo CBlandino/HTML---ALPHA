@@ -2,31 +2,31 @@ document.addEventListener("DOMContentLoaded", function() {
     const products = [
       {
         title: "Men's T-Shirt",
-        price: 19.99,
+        price: 17.99,
         description: "Comfortable cotton t-shirt for men.",
-        image: ""
+        image: "img/white_tee_front.png"
       },
       {
         title: "Men's Hoodies",
-        price: 34.99,
-        description: "Comfortable polyester hoodies for men.",
-        image: ""
+        price: 23.99,
+        description: "Comfortable cotton hoodies for men.",
+        image: "img/white_hoodie_front.png"
       },
       {
-        title: "Men's Oversized T-Shirt",
-        price: 24.99,
-        description: "Stylish and comfotable t-shirts for yor day to day fit",
-        image: ""
+        title: "Men's Buckethat",
+        price: 12.99,
+        description: "Stylish and comfortable buckethat for your day to day fit",
+        image: "img/white_buckethat.png"
       },
       {
-        title: "Men's Oversized Pants",
-        price: 29.99,
-        description: "Stylish and comfotable pants for yor day to day fit.",
-        image: ""
+        title: "Men's Sweatpants",
+        price: 14.99,
+        description: "Stylish and comfortable pants for your day to day fit.",
+        image: "img/white_sweatpants.png"
       }
       
     ];
-  
+
     const productList = document.getElementById("product-list");
   
     // Function to display products on the webpage
