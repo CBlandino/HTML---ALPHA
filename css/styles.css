@@ -24,7 +24,20 @@ header {
     font-size: 1.5rem;
     font-weight: bold;
     /* Remove underline */
-    text-decoration: none; 
+    text-decoration: none;
+    /* Add background image */
+    background-image: url('img/Alpha_logo.png');
+    /* Set background size */
+    background-size: contain;
+    /* Set background position */
+    background-position: left center;
+    /* Set padding to accommodate the logo */
+    padding-left: 50px; 
+}
+
+.navbar-brand:hover {
+    color: #fff;
+    text-decoration: none;
 }
 
 .navbar-toggler-icon {
@@ -59,6 +72,20 @@ header {
 }
 
 /* Specific Page Styles */
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product-item {
+    flex: 1 0 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+
+
 .login-popup {
     /* Initially hidden */
     display: none; 
@@ -198,6 +225,21 @@ button[type="submit"]:hover {
 /* Show the popup by changing the transform */
 .signup-popup.show {
     transform: translate(-50%, -50%);
+}
+
+
+.contact-box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section label {
+    font-weight: bold;
+}
+
+.contact-section button {
+    margin-top: 10px;
 }
 
 

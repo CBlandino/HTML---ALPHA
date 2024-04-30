@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing Products</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">ALPHA</a>
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation Links -->
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between align-items-center">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="product.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="contactus.html">Contact</a>
+                    </li>
+                    <li class="nav-item" style="margin-left: auto;">
+                        <a class="nav-link text-dark"  onclick="showLoginPopup()">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+  <div class="container">
+  <h1>Clothing Products</h1>
+  <div class="product" id="product-list">
+    <!-- Products will be dynamically added here -->
+  </div>
+</div>
+
+<footer class="border-top footer text-muted">
+  <div class="container">
+      &copy; 2024 - ALPHA - <a href="#">Privacy</a>
+  </div>
+</footer>
+<!-- Additional JavaScript files -->
+<script src="js/popup.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
